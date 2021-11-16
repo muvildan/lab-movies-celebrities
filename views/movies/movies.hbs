@@ -1,0 +1,17 @@
+<h2>Movies</h2>
+<hr>
+<a href="/">HOME</a>
+</br>
+<a href="movies/create">Add a new movie</a>
+<hr>
+{{#each movie}}
+  <div>
+    <p><h5>Title:</h5> {{title}}</p>
+    {{#each cast}}
+    <p><h5>Cast:</h5>{{name}}</p>
+    {{/each}}
+    <hr>
+    <p><a href="movies/{{_id}}">Learn more</a></p>
+  <hr>
+  </div>
+{{/each}}

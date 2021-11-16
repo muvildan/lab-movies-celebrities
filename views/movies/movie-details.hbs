@@ -1,0 +1,21 @@
+<h1>Movie details</h1>
+<a href="/">HOME</a>
+<hr>
+<h4>{{movie.title}}</h4>
+<hr>
+<p><h5>Genre:</h5>{{movie.genre}}</p>
+<p><h5>Plot:</h5> {{movie.plot}}</p>
+
+<h5>Cast:</h5>
+{{#each movie.cast}}
+        <p><strong>{{name}}</strong></p>
+        <p>Occupation: {{occupation}}</p>
+        <p>Catch phrase: {{catchPhrase}}</p>
+{{/each}}
+
+<hr>
+<a href="/movies/edit/{{_id}}">Edit</a>
+<br>
+<a href="/movies/delete/{{_id}}">Delete</a>
+<br>
+<a href="/movies">Back</a>

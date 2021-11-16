@@ -1,0 +1,11 @@
+<h2>Celebrities</h2>
+<a href="celebrities/create">Add a new celebrity</a>
+<hr>
+{{#each celebrity}}
+  <div>
+    <p><h5>Name:</h5> {{name}}</p>
+    <p><h5>Occupation:</h5> {{occupation}}</p>
+    <p><h5>Catch phrase:</h5> {{catchPhrase}}</p>
+  <hr>
+  </div>
+{{/each}}
